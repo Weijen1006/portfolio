@@ -11,10 +11,8 @@ export default function LandingPage() {
     {/* Fixed background vortex */}
       <div className="fixed inset-0 -z-10">
         <Vortex
-          backgroundColor="black"
           rangeY={typeof window !== "undefined" ? window.innerHeight : 800}
-          particleCount={500}
-          baseHue={120}
+          baseHue={animationBaseHue}
           className="w-full h-full"
         />
       </div>
